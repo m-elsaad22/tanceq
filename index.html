@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Technical &amp; Commercial Proposal — NATIONAL CONTRACTING | Temporary Site Offices Solar Power</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================== TOOLBAR ===================== -->
+  <div class="toolbar no-print">
+    <div class="toolbar-inner">
+      <div class="brand-mini" data-i18n="toolbarBrand">Solar EPC Proposal</div>
+      <button type="button" id="btn-edit" class="primary"><span data-i18n="editMode">Edit Mode</span></button>
+      <button type="button" id="btn-print" class="gold"><span data-i18n="print">Print Quotation</span></button>
+      <button type="button" id="btn-pdf"><span data-i18n="pdf">Save as PDF</span></button>
+      <button type="button" id="btn-lang"><span data-i18n="langBtn">العربية</span></button>
+      <button type="button" id="btn-save"><span data-i18n="save">Save Data</span></button>
+      <button type="button" id="btn-reset"><span data-i18n="reset">Reset Data</span></button>
+      <label class="tool-toggle"><input type="checkbox" id="chk-prices" /> <span data-i18n="hidePrices">Hide Prices</span></label>
+      <label class="tool-toggle"><input type="checkbox" id="chk-opt1" checked /> <span data-i18n="showOpt1">Option 01</span></label>
+      <label class="tool-toggle"><input type="checkbox" id="chk-opt2" checked /> <span data-i18n="showOpt2">Option 02</span></label>
+    </div>
+  </div>
+
+  <div class="document-wrap">
+
+    <!-- ===================== 1. COVER ===================== -->
+    <section class="page cover" id="cover">
+      <div class="page-inner">
+        <div class="cover-top">
+          <div class="cover-badge">Technical &amp; Commercial Proposal</div>
+          <div style="text-align:right;font-size:0.85rem;opacity:0.85">
+            <div><span class="lang-en">Quotation No.</span><span class="lang-ar">رقم العرض</span>:
+              <span data-editable data-store="quoteNo">QT-NC-SOLAR-2026-001</span></div>
+            <div><span class="lang-en">Date</span><span class="lang-ar">التاريخ</span>:
+              <span data-editable data-store="quoteDate">18 November 2026</span></div>
+          </div>
+        </div>
+
+        <div class="cover-brand-block">
+          <span class="cover-eyebrow" data-editable data-store="companyName">[Proposer Company Name — Editable]</span>
+          <h1 class="cover-brand">NATIONAL CONTRACTING</h1>
+          <p class="cover-headline">
+            <span class="lang-en">Temporary Site Offices — Solar Power Supply</span>
+            <span class="lang-ar">مكاتب الموقع المؤقتة — تزويد بالطاقة الشمسية</span>
+          </p>
+          <p class="cover-sub">
+            <span class="lang-en">Two Alternative Solar Power Solutions for Rawdat Al Sidr, Sharjah, UAE — Off-Grid and Hybrid with Diesel Generator Backup.</span>
+            <span class="lang-ar block">حلّان بديلان للطاقة الشمسية في روضة السدر، الشارقة، الإمارات — نظام مستقل ونظام هجين مع مولد ديزل احتياطي.</span>
+          </p>
+        </div>
+
+        <div class="cover-meta-panel">
+          <div>
+            <h3><span class="lang-en">Project Snapshot</span><span class="lang-ar">لمحة عن المشروع</span></h3>
+            <dl>
+              <dt><span class="lang-en">Client</span><span class="lang-ar">العميل</span></dt>
+              <dd data-editable data-store="clientName">NATIONAL CONTRACTING</dd>
+              <dt><span class="lang-en">Location</span><span class="lang-ar">الموقع</span></dt>
+              <dd data-editable data-store="projectLocation">Rawdat Al Sidr, Sharjah, UAE</dd>
+              <dt><span class="lang-en">Application</span><span class="lang-ar">التطبيق</span></dt>
+              <dd data-editable data-store="application">Temporary Site Offices / Portable Cabins</dd>
+              <dt><span class="lang-en">Est. Load</span><span class="lang-ar">الحمل التقديري</span></dt>
+              <dd>~200 kVA <span class="lang-en">(subject to confirmation)</span><span class="lang-ar">(قابل للتأكيد)</span></dd>
+            </dl>
+          </div>
+          <div class="cover-options">
+            <h3><span class="lang-en">Proposed Options</span><span class="lang-ar">الخيارات المقترحة</span></h3>
+            <div class="option-chip"><strong>OPTION 01</strong> — Off-Grid Solar Power System (PV + LiFePO₄ ESS)</div>
+            <div class="option-chip"><strong>OPTION 02</strong> — Hybrid Solar + New Diesel Generator Backup</div>
+            <div class="option-chip" style="border-color:#8ec8e3">
+              <span class="lang-en">All capacities, brands and prices are editable pending final engineering &amp; supplier confirmation.</span>
+              <span class="lang-ar">جميع القدرات والعلامات والأسعار قابلة للتعديل بانتظار الاعتماد الهندسي وتأكيد الموردين.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. INTRODUCTION ===================== -->
+    <section class="page" id="introduction">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title"><span data-store="companyNameHeader" data-editable>[Company Name]</span> — Solar EPC</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">
+            <div>NATIONAL CONTRACTING</div>
+            <div>Confidential Proposal</div>
+          </div>
+        </div>
+
+        <h2><span class="section-no">02</span><span class="lang-en">Project Introduction</span><span class="lang-ar">مقدمة المشروع</span></h2>
+        <p class="lead lang-en">
+          This document presents a professional Technical &amp; Commercial Proposal for the supply and installation of solar power systems serving temporary site offices / portable cabins at Rawdat Al Sidr, Sharjah, United Arab Emirates, for <strong>NATIONAL CONTRACTING</strong>.
+        </p>
+        <p class="lead lang-ar block">
+          يقدّم هذا المستند عرضًا فنيًا وتجاريًا احترافيًا لتوريد وتركيب أنظمة طاقة شمسية لخدمة مكاتب الموقع المؤقتة / الكبائن المتنقلة في روضة السدر، الشارقة، الإمارات العربية المتحدة، لصالح شركة <strong>NATIONAL CONTRACTING</strong>.
+        </p>
+
+        <div class="hero-strip">
+          <div>
+            <img src="assets/hero/industrial-solar.jpg" alt="Industrial solar installation" />
+            <div class="caption"><span class="lang-en">Illustrative — commercial solar array context</span><span class="lang-ar">صورة توضيحية — سياق مصفوفات شمسية تجارية</span></div>
+          </div>
+          <div>
+            <img src="assets/hero/site-offices.jpg" alt="Construction site offices context" />
+            <div class="caption"><span class="lang-en">Illustrative — temporary site / construction context</span><span class="lang-ar">صورة توضيحية — سياق مواقع مؤقتة / إنشائية</span></div>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="info-card">
+            <span class="label"><span class="lang-en">Proposal Objective</span><span class="lang-ar">هدف العرض</span></span>
+            <p class="lang-en" style="margin:0">Provide two clearly differentiated, bankable solar power alternatives for a site without existing grid connection or diesel generator, enabling informed technical and commercial selection.</p>
+            <p class="lang-ar block" style="margin:0">تقديم حلّين شمسيين متمايزين بوضوح لموقع بلا شبكة كهرباء أو مولد ديزل قائم، لتمكين اختيار فني وتجاري مستنير.</p>
+          </div>
+          <div class="info-card">
+            <span class="label"><span class="lang-en">Document Nature</span><span class="lang-ar">طبيعة المستند</span></span>
+            <p class="lang-en" style="margin:0">Engineering quotation / proposal — not a final fixed-price contract until capacities, brands, and unit rates are confirmed and countersigned.</p>
+            <p class="lang-ar block" style="margin:0">عرض هندسي سعري — وليس عقدًا نهائيًا بسعر ثابت إلا بعد تأكيد القدرات والعلامات وأسعار الوحدات والتوقيع المتبادل.</p>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <strong><span class="lang-en">Important:</span><span class="lang-ar">مهم:</span></strong>
+          <span class="lang-en"> Final system sizing is subject to detailed load analysis and confirmation of actual operating demand. Connected load (kW), maximum demand, and daily energy (kWh) are distinct engineering quantities and must not be conflated.</span>
+          <span class="lang-ar"> الحجم النهائي للنظام خاضع لتحليل أحمال تفصيلي وتأكيد الطلب التشغيلي الفعلي. الحمل المتصل (كيلوواط) والطلب الأقصى والطاقة اليومية (كيلوواط ساعة) كميات هندسية مختلفة ويجب عدم الخلط بينها.</span>
+        </div>
+
+        <div class="page-footer">
+          <span><span class="lang-en">Technical &amp; Commercial Proposal — NATIONAL CONTRACTING</span><span class="lang-ar">عرض فني وتجاري — NATIONAL CONTRACTING</span></span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">2</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. CLIENT REQUIREMENTS ===================== -->
+    <section class="page" id="requirements">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title"><span data-editable data-store="companyNameHeader2">[Company Name]</span> — Solar EPC</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Project Overview</div>
+        </div>
+
+        <h2><span class="section-no">03</span><span class="lang-en">Client Requirements &amp; Project Overview</span><span class="lang-ar">متطلبات العميل ونظرة عامة على المشروع</span></h2>
+
+        <div class="meta-grid">
+          <div class="info-card"><span class="label">Client Name</span><div class="value" data-editable data-store="clientName2">NATIONAL CONTRACTING</div></div>
+          <div class="info-card"><span class="label">Project Name</span><div class="value" data-editable data-store="projectName">Temporary Site Offices – Solar Power Supply</div></div>
+          <div class="info-card"><span class="label">Project Location</span><div class="value" data-editable data-store="location2">Rawdat Al Sidr, Sharjah, United Arab Emirates</div></div>
+          <div class="info-card"><span class="label">Application</span><div class="value" data-editable data-store="app2">Temporary Site Offices / Portable Cabins</div></div>
+          <div class="info-card"><span class="label">Estimated Total Load</span><div class="value" data-editable data-store="estLoad">Approximately 200 kVA</div></div>
+          <div class="info-card"><span class="label">Daily Operation</span><div class="value" data-editable data-store="dailyOp">10 Hours</div></div>
+          <div class="info-card"><span class="label">Night Operation</span><div class="value" data-editable data-store="nightOp">Lighting Only</div></div>
+          <div class="info-card"><span class="label">Existing Electricity Supply</span><div class="value" data-editable data-store="gridExist">Not Available</div></div>
+          <div class="info-card"><span class="label">Existing Diesel Generator</span><div class="value" data-editable data-store="dgExist">Not Available</div></div>
+          <div class="info-card"><span class="label">Solar Panel Installation Space</span><div class="value" data-editable data-store="pvSpace">Available</div></div>
+          <div class="info-card" style="grid-column:1/-1"><span class="label">Requested Proposal</span><div class="value" data-editable data-store="requested">Two Alternative Solar Power Solutions</div></div>
+        </div>
+
+        <h3><span class="lang-en">Site Boundary Conditions</span><span class="lang-ar">شروط الموقع</span></h3>
+        <ul class="terms-list">
+          <li class="lang-en">No utility grid connection is available at the project site.</li>
+          <li class="lang-ar">لا تتوفر شبكة كهرباء عمومية في موقع المشروع.</li>
+          <li class="lang-en">No existing diesel generator is available; Option 02 includes a new generator set to be engineered.</li>
+          <li class="lang-ar">لا يوجد مولد ديزل قائم؛ يتضمن الخيار 02 مولدًا جديدًا يُحدد حجمه هندسيًا.</li>
+          <li class="lang-en">Solar mounting space is stated as available; structural survey remains required before final layout.</li>
+          <li class="lang-ar">مساحة تركيب الألواح متاحة حسب الإفادة؛ ويبقى المسح الإنشائي مطلوبًا قبل التخطيط النهائي.</li>
+        </ul>
+
+        <div class="page-footer">
+          <span>NATIONAL CONTRACTING — Rawdat Al Sidr, Sharjah</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">3</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. LOAD ANALYSIS ===================== -->
+    <section class="page" id="load-analysis">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Electrical Load Analysis</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Client Load Schedule (Unaltered)</div>
+        </div>
+
+        <h2><span class="section-no">04</span><span class="lang-en">Electrical Load Analysis</span><span class="lang-ar">تحليل الأحمال الكهربائية</span></h2>
+        <p class="lang-en">The following load schedule is reproduced exactly from the client-provided load model. No additional loads have been invented or modified.</p>
+        <p class="lang-ar block">يُعرض جدول الأحمال التالي كما ورد في نموذج العميل دون اختراع أو تعديل أحمال إضافية.</p>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Unit Load (W)</th>
+                <th>Total Load (kW)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Lighting</td><td class="num">180</td><td class="num">50</td><td class="num">9</td></tr>
+              <tr><td>Fans</td><td class="num">20</td><td class="num">100</td><td class="num">2</td></tr>
+              <tr><td>15A Sockets</td><td class="num">25</td><td class="num">500</td><td class="num">12.5</td></tr>
+              <tr><td>13A Sockets</td><td class="num">150</td><td class="num">200</td><td class="num">30</td></tr>
+              <tr><td>Water Heaters</td><td class="num">2</td><td class="num">1500</td><td class="num">3</td></tr>
+              <tr><td>Air Conditioners</td><td class="num">30</td><td class="num">2500</td><td class="num">75</td></tr>
+              <tr><td>Cookers</td><td class="num">3</td><td class="num">1500</td><td class="num">4.5</td></tr>
+              <tr><td>Pumps</td><td class="num">4</td><td class="num">2500</td><td class="num">10</td></tr>
+              <tr><td>Other Equipment</td><td class="num">6</td><td class="num">2500</td><td class="num">15</td></tr>
+            </tbody>
+            <tfoot>
+              <tr><td colspan="3">Total Connected Load (Client Model)</td><td class="num">161 kW</td></tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <h3><span class="lang-en">Technical Notes — Load &amp; Demand Clarification</span><span class="lang-ar">ملاحظات فنية — توضيح الحمل والطلب</span></h3>
+        <div class="note-box alert-note">
+          <ul style="margin:0;padding-inline-start:18px">
+            <li class="lang-en">Client load model total power: <strong>161 kW</strong> connected load.</li>
+            <li class="lang-ar">إجمالي القدرة في نموذج العميل: <strong>161 كيلوواط</strong> حمل متصل.</li>
+            <li class="lang-en">Client model states calculated capacity of approximately <strong>201.25 kVA</strong>.</li>
+            <li class="lang-ar">يذكر النموذج قدرة محسوبة تقارب <strong>201.25 ك.ف.أ</strong>.</li>
+            <li class="lang-en">First page of client documentation records a total load of <strong>221 kVA</strong>.</li>
+            <li class="lang-ar">تسجّل الصفحة الأولى من وثائق العميل إجمالي حمل <strong>221 ك.ف.أ</strong>.</li>
+            <li class="lang-en">Verbal client statement: overall load approximately <strong>200 kVA</strong>.</li>
+            <li class="lang-ar">الإفادة الشفهية من العميل: الحمل الإجمالي حوالي <strong>200 ك.ف.أ</strong>.</li>
+          </ul>
+          <p style="margin:10px 0 0" class="lang-en"><strong>Action required:</strong> Client confirmation of the adopted design value (161 kW / 201.25 kVA / 221 kVA / ~200 kVA) before freezing inverter, battery, PV, and generator ratings.</p>
+          <p style="margin:10px 0 0" class="lang-ar block"><strong>إجراء مطلوب:</strong> تأكيد العميل للقيمة المعتمدة للتصميم قبل تثبيت قدرات الإنفرتر والبطاريات والألواح والمولد.</p>
+        </div>
+
+        <h3><span class="lang-en">Engineering Distinctions (Do Not Equate)</span><span class="lang-ar">تمييزات هندسية (لا تُساوَى)</span></h3>
+        <div class="three-col">
+          <div class="info-card"><span class="label">Connected Load</span><div class="value">161 kW</div><p class="muted" style="margin:6px 0 0;font-size:0.8rem">Sum of nameplate loads in client schedule.</p></div>
+          <div class="info-card"><span class="label">Maximum Demand</span><div class="value">TBD</div><p class="muted" style="margin:6px 0 0;font-size:0.8rem">Requires diversity / coincidence factor study.</p></div>
+          <div class="info-card"><span class="label">Daily Energy (kWh/day)</span><div class="value">TBD</div><p class="muted" style="margin:6px 0 0;font-size:0.8rem">Not equal to 161 kW × 10 h without operating profiles.</p></div>
+        </div>
+        <p class="muted lang-en">Night operation is lighting only — battery autonomy must be sized on verified nighttime lighting demand, not full connected load.</p>
+        <p class="muted lang-ar block">التشغيل الليلي للإضاءة فقط — يجب تحجيم استقلالية البطاريات على طلب الإضاءة الليلي المُتحقق منه، وليس على كامل الحمل المتصل.</p>
+
+        <div class="page-footer">
+          <span>Load Schedule — Client Source Data Preserved</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">4</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PROPOSED TECHNICAL SOLUTION ===================== -->
+    <section class="page" id="proposed-solution">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Proposed Technical Solution</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Dual-Option Architecture</div>
+        </div>
+
+        <h2><span class="section-no">05</span><span class="lang-en">Proposed Technical Solution</span><span class="lang-ar">الحل الفني المقترح</span></h2>
+        <p class="lang-en">Two mutually exclusive architectures are offered. Both serve the temporary site offices without reliance on an existing grid connection. Equipment brands and models listed later are <em>reference-class commercial products</em> suitable for UAE conditions — not a commitment that a specific SKU is already procured for this project.</p>
+        <p class="lang-ar block">يُعرض معماريتان متنافيتان. كلاهما يخدم مكاتب الموقع دون الاعتماد على شبكة قائمة. العلامات والموديلات الواردة لاحقًا منتجات مرجعية تجارية مناسبة لظروف الإمارات — وليست التزامًا بأن موديلًا بعينه قد تم اعتماده للمشروع.</p>
+
+        <div class="two-col">
+          <div class="info-card" style="border-top:3px solid #0b6e99">
+            <span class="label">OPTION 01</span>
+            <h3 style="margin:4px 0 8px">Off-Grid Solar Power System</h3>
+            <p class="lang-en" style="margin:0">Autonomous PV + industrial hybrid/off-grid inverters + LiFePO₄ battery storage. No diesel generator and no utility grid. Daytime loads served primarily from PV; nighttime lighting from batteries.</p>
+            <p class="lang-ar block" style="margin:0">نظام مستقل: ألواح + إنفرترات صناعية + بطاريات LiFePO₄. بلا مولد ديزل وبلا شبكة. أحمال النهار من الشمس أساسًا؛ إضاءة الليل من البطاريات.</p>
+          </div>
+          <div class="info-card" style="border-top:3px solid #8a7018">
+            <span class="label">OPTION 02</span>
+            <h3 style="margin:4px 0 8px">Hybrid Solar + Diesel Backup</h3>
+            <p class="lang-en" style="margin:0">PV + hybrid inverters + lithium storage + <strong>new</strong> diesel genset with ATS. Reduces oversized battery banks by allowing generator support during peak or extended autonomy needs.</p>
+            <p class="lang-ar block" style="margin:0">نظام هجين: ألواح + إنفرترات هجينة + تخزين ليثيوم + مولد ديزل <strong>جديد</strong> مع ATS. يقلل الحاجة لبنوك بطاريات ضخمة عبر دعم المولد عند الذروة أو الاستقلالية الممتدة.</p>
+          </div>
+        </div>
+
+        <h3><span class="lang-en">Editable Engineering Sizing Fields (Both Options)</span><span class="lang-ar">حقول التحجيم الهندسي القابلة للتعديل</span></h3>
+        <p class="muted lang-en">Leave blank or “TBD” until load confirmation. Placeholder text is intentional.</p>
+        <p class="muted lang-ar block">اترك الحقول فارغة أو TBD حتى تأكيد الأحمال. النص التوضيحي مقصود.</p>
+
+        <div class="sizing-grid" id="global-sizing">
+          <div class="sizing-item"><label>Total Solar PV Capacity (kWp)</label><input class="editable" data-sizing="pvKwp" type="text" placeholder="TBD — subject to load analysis" /></div>
+          <div class="sizing-item"><label>Number of Solar Panels</label><input class="editable" data-sizing="panelQty" type="text" placeholder="TBD" /></div>
+          <div class="sizing-item"><label>Individual Panel Wattage (W)</label><input class="editable" data-sizing="panelW" type="text" placeholder="e.g. 580–625 W class (ref.)" /></div>
+          <div class="sizing-item"><label>Total Inverter Capacity (kW)</label><input class="editable" data-sizing="invKw" type="text" placeholder="TBD — based on maximum demand" /></div>
+          <div class="sizing-item"><label>Battery Storage Capacity (kWh)</label><input class="editable" data-sizing="battKwh" type="text" placeholder="TBD" /></div>
+          <div class="sizing-item"><label>Usable Battery Capacity (kWh)</label><input class="editable" data-sizing="battUsable" type="text" placeholder="TBD (DoD / BMS limited)" /></div>
+          <div class="sizing-item"><label>Generator Capacity (kVA) — Option 02</label><input class="editable" data-sizing="genKva" type="text" placeholder="TBD — to be engineered" /></div>
+          <div class="sizing-item"><label>Estimated Daily Energy Production (kWh)</label><input class="editable" data-sizing="prodKwh" type="text" placeholder="Not guaranteed — site irradiance study required" /></div>
+          <div class="sizing-item"><label>Estimated Daily Energy Consumption (kWh)</label><input class="editable" data-sizing="consKwh" type="text" placeholder="Requires operating profile confirmation" /></div>
+          <div class="sizing-item"><label>Estimated Battery Backup Hours</label><input class="editable" data-sizing="backupHrs" type="text" placeholder="Lighting-night profile TBD" /></div>
+        </div>
+
+        <div class="note-box">
+          <em>Final system sizing subject to detailed load analysis and confirmation of actual operating demand.</em>
+        </div>
+
+        <div class="page-footer">
+          <span>Dual Alternative Architecture</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">5</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. OPTION 01 ===================== -->
+    <section class="page option-01" id="option-01">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 01 — Off-Grid Solar</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">No Grid · No Diesel</div>
+        </div>
+
+        <div class="option-banner">
+          <h2>OPTION 01 — Off-Grid Solar Power System</h2>
+          <p><span class="lang-en">Independent solar power plant based on PV modules and lithium battery storage — without diesel generator or utility grid interconnection.</span><span class="lang-ar">محطة شمسية مستقلة تعتمد على الألواح وبطاريات الليثيوم — دون مولد ديزل أو ربط بشبكة الكهرباء.</span></p>
+        </div>
+
+        <img src="assets/hero/solar-panels-close.jpg" alt="Solar panels" style="width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:14px" />
+
+        <h3><span class="lang-en">System Philosophy</span><span class="lang-ar">فلسفة النظام</span></h3>
+        <p class="lang-en">Option 01 is designed as a true off-grid solution. Solar generation charges the LiFePO₄ energy storage system through industrial-grade off-grid / hybrid inverters. Site AC loads are supplied from the inverter AC bus. Night lighting is served from stored energy. There is <strong>no</strong> provision for a diesel genset within this option’s base scope.</p>
+        <p class="lang-ar block">الخيار 01 مصمم كنظام مستقل فعليًا. الشحن عبر إنفرترات صناعية؛ الأحمال من ناقل التيار المتردد؛ إضاءة الليل من التخزين. <strong>لا</strong> يشمل نطاق هذا الخيار مولد ديزل.</p>
+
+        <h3><span class="lang-en">Major Components</span><span class="lang-ar">المكونات الرئيسية</span></h3>
+        <ol class="scope-list">
+          <li>High Efficiency Monocrystalline Solar PV Panels</li>
+          <li>Industrial Grade Off-Grid / Hybrid Inverters</li>
+          <li>Lithium Battery Energy Storage System (LiFePO₄)</li>
+          <li>Battery Management System (BMS)</li>
+          <li>Solar DC Combiner Boxes</li>
+          <li>AC Distribution Panels</li>
+          <li>DC and AC Protection Systems</li>
+          <li>Solar Mounting Structures</li>
+          <li>DC/AC Cables and Connectors</li>
+          <li>Earthing and Lightning Protection</li>
+          <li>Monitoring and Energy Management System</li>
+          <li>Installation, Testing and Commissioning</li>
+        </ol>
+
+        <div class="note-box">
+          <span class="lang-en"><strong>Design implication:</strong> Battery usable capacity must cover verified nighttime lighting and any agreed autonomy margin. Oversizing PV and ESS without confirmed kWh/day profiles is not recommended.</span>
+          <span class="lang-ar block"><strong>دلالة تصميمية:</strong> يجب أن تغطي السعة القابلة للاستخدام من البطاريات إضاءة الليل المُتحقق منها وأي هامش استقلالية متفق عليه. لا يُنصح بالمبالغة في حجم الألواح والتخزين دون ملفات استهلاك مؤكدة.</span>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 01 — Off-Grid Architecture</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">6</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 7. OPTION 01 EQUIPMENT ===================== -->
+    <section class="page option-01" id="option-01-equipment">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 01 — Equipment Specifications</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Reference Products · Illustrative Images</div>
+        </div>
+
+        <h2><span class="section-no">07</span><span class="lang-en">Equipment Specifications &amp; Product Images</span><span class="lang-ar">مواصفات المعدات وصور المنتجات</span></h2>
+        <p class="muted lang-en">Images are illustrative / manufacturer-class references. Final brand and model require written confirmation.</p>
+        <p class="muted lang-ar block">الصور توضيحية / مرجعية لفئة الشركة المصنعة. العلامة والموديل النهائيان يتطلبان تأكيدًا كتابيًا.</p>
+
+        <div class="equipment-grid">
+          <article class="equip-card">
+            <img src="assets/products/longi-card.svg" alt="LONGi Hi-MO 7 reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">LONGi Solar</div>
+              <h4>Hi-MO 7 Series (Reference)</h4>
+              <ul>
+                <li>Monocrystalline HPDC / high-efficiency module class</li>
+                <li>Typical commercial power class ~610–625 W</li>
+                <li>Suitable for UAE high-irradiance sites (final BOM TBD)</li>
+              </ul>
+              <a class="link" href="https://www.longi.com/en/products/modules/hi-mo-7/" target="_blank" rel="noopener">Manufacturer page</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/jinko-card.svg" alt="JinkoSolar reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">JinkoSolar</div>
+              <h4>Tiger Neo Series (Reference)</h4>
+              <ul>
+                <li>N-Type TOPCon commercial module family</li>
+                <li>Alternative high-efficiency PV option</li>
+                <li>Model selection after string design</li>
+              </ul>
+              <a class="link" href="https://www.jinkosolar.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/deye-card.svg" alt="Deye hybrid inverter reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Deye</div>
+              <h4>SUN Hybrid / Off-Grid Series (Reference)</h4>
+              <ul>
+                <li>Commercial hybrid / off-grid inverter class</li>
+                <li>Battery-ready architecture for islanded sites</li>
+                <li>Rated kW bank subject to maximum demand study</li>
+              </ul>
+              <a class="link" href="https://www.deyeinverter.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/huawei-card.svg" alt="Huawei FusionSolar reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Huawei FusionSolar</div>
+              <h4>SUN2000 Commercial Series (Reference)</h4>
+              <ul>
+                <li>Smart string / hybrid commercial platform</li>
+                <li>Monitoring via FusionSolar ecosystem</li>
+                <li>Applicability to off-grid topology to be engineered</li>
+              </ul>
+              <a class="link" href="https://solar.huawei.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/byd-card.svg" alt="BYD Battery-Box reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">BYD Battery-Box</div>
+              <h4>Premium LVL / Commercial ESS (Reference)</h4>
+              <ul>
+                <li>LiFePO₄ chemistry, integrated BMS</li>
+                <li>Scalable modular energy storage</li>
+                <li>Usable kWh depends on DoD &amp; inverter coupling</li>
+              </ul>
+              <a class="link" href="https://www.bydbatterybox.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/catl-card.svg" alt="CATL ESS reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">CATL Energy Storage</div>
+              <h4>Commercial ESS Cabinet / Container (Reference)</h4>
+              <ul>
+                <li>Industrial LFP energy storage platforms</li>
+                <li>Alternative ESS supplier class for large banks</li>
+                <li>Final configuration after autonomy study</li>
+              </ul>
+              <a class="link" href="https://www.catl.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/mounting-structure.jpg" alt="Mounting structures" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Mounting &amp; BOS</div>
+              <h4>Solar Mounting Structures</h4>
+              <ul>
+                <li>Hot-dip galvanized / aluminum structures</li>
+                <li>Roof / ground / canopy as per site survey</li>
+                <li>Wind load design per UAE conditions TBD</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="equip-card">
+            <img src="assets/products/monitoring-system.jpg" alt="Monitoring system" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">EMS / SCADA Class</div>
+              <h4>Monitoring &amp; Energy Management</h4>
+              <ul>
+                <li>Production, SOC, load visibility</li>
+                <li>Remote alerting where communications available</li>
+                <li>Platform brand aligned with selected inverter</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 01 — Reference Equipment Portfolio</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">7</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 8. OPTION 01 BOQ ===================== -->
+    <section class="page option-01" id="option-01-boq">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 01 — BOQ &amp; Financial Quotation</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">All prices in AED · Editable</div>
+        </div>
+
+        <h2><span class="section-no">08</span><span class="lang-en">OPTION 01 — Bill of Quantities &amp; Quotation</span><span class="lang-ar">الخيار 01 — جدول الكميات والأسعار</span></h2>
+        <p class="muted lang-en">Unit prices left blank intentionally until supplier quotations are received. Enter rates in Edit Mode; totals calculate automatically.</p>
+        <p class="muted lang-ar block">أُبقيت أسعار الوحدات فارغة عمدًا حتى ورود عروض الموردين. أدخل الأسعار في وضع التعديل؛ تُحسب الإجماليات تلقائيًا.</p>
+
+        <div class="boq-actions edit-only">
+          <button type="button" data-add-boq="opt1" data-i18n-addrow>Add BOQ Row</button>
+        </div>
+
+        <div class="table-scroll">
+          <table class="boq-table" data-option="opt1">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Equipment Description</th>
+                <th>Brand / Model</th>
+                <th>Image</th>
+                <th>Qty</th>
+                <th>Unit</th>
+                <th class="price-col">Unit Price (AED)</th>
+                <th class="price-col">Total (AED)</th>
+                <th class="edit-only"></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="item-no">01</td>
+                <td><input type="text" class="editable" data-field="desc" value="Solar PV Panels — High Efficiency Monocrystalline"></td>
+                <td><input type="text" class="editable" data-field="brand" value="LONGi / Jinko / Trina (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/longi-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="Wp"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">02</td>
+                <td><input type="text" class="editable" data-field="desc" value="Industrial Off-Grid / Hybrid Inverters"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Deye / Huawei / Sungrow (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/deye-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="kW"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">03</td>
+                <td><input type="text" class="editable" data-field="desc" value="Lithium Battery Energy Storage (LiFePO4)"></td>
+                <td><input type="text" class="editable" data-field="brand" value="BYD / CATL (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/byd-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="kWh"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">04</td>
+                <td><input type="text" class="editable" data-field="desc" value="Battery Cabinets / Racks + BMS Integration"></td>
+                <td><input type="text" class="editable" data-field="brand" value="OEM Matching ESS"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/battery-cabinet.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">05</td>
+                <td><input type="text" class="editable" data-field="desc" value="Solar DC Combiner Boxes"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Industrial Grade (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/combiner-box.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">06</td>
+                <td><input type="text" class="editable" data-field="desc" value="AC Distribution Panels"></td>
+                <td><input type="text" class="editable" data-field="brand" value="ABB / Schneider / Equivalent (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/electrical-panel.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">07</td>
+                <td><input type="text" class="editable" data-field="desc" value="DC & AC Protection Devices"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/earthing-protection.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">08</td>
+                <td><input type="text" class="editable" data-field="desc" value="Solar Mounting Structures"></td>
+                <td><input type="text" class="editable" data-field="brand" value="HDG / Aluminium (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/mounting-structure.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">09</td>
+                <td><input type="text" class="editable" data-field="desc" value="DC/AC Cables, Connectors & Accessories"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/cables-accessories.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">10</td>
+                <td><input type="text" class="editable" data-field="desc" value="Earthing & Lightning Protection"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/earthing-protection.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">11</td>
+                <td><input type="text" class="editable" data-field="desc" value="Monitoring & Energy Management System"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Inverter OEM Platform (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/monitoring-system.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">12</td>
+                <td><input type="text" class="editable" data-field="desc" value="Installation & Labor"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">13</td>
+                <td><input type="text" class="editable" data-field="desc" value="Testing & Commissioning"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">14</td>
+                <td><input type="text" class="editable" data-field="desc" value="Transportation"></td>
+                <td><input type="text" class="editable" data-field="brand" value="—"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">15</td>
+                <td><input type="text" class="editable" data-field="desc" value="Engineering & Design"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="financial-summary">
+          <table>
+            <tr><td>Subtotal</td><td class="num"><span data-fin="opt1-subtotal">0.00</span> AED</td></tr>
+            <tr><td>Discount (AED)</td><td><input type="number" min="0" step="0.01" class="editable num" data-fin="opt1-discount" value="0" /></td></tr>
+            <tr><td>VAT Rate (%)</td><td><input type="number" min="0" step="0.01" class="editable num" data-fin="opt1-vatRate" value="5" /></td></tr>
+            <tr><td>VAT Amount</td><td class="num"><span data-fin="opt1-vatAmount">0.00</span> AED</td></tr>
+            <tr class="grand-total"><td>Grand Total Incl. VAT</td><td class="num"><span data-fin="opt1-grand">0.00</span> AED</td></tr>
+          </table>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 01 — Commercial Offer (AED)</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">8</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 9. OPTION 02 ===================== -->
+    <section class="page option-02" id="option-02">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 02 — Hybrid + Diesel</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">New Genset Required</div>
+        </div>
+
+        <div class="option-banner">
+          <h2>OPTION 02 — Hybrid Solar System with Diesel Generator Backup</h2>
+          <p><span class="lang-en">PV + hybrid inverters + lithium storage + new diesel generator with ATS — for sites without existing genset.</span><span class="lang-ar">ألواح + إنفرترات هجينة + تخزين ليثيوم + مولد ديزل جديد مع ATS — للمواقع بلا مولد قائم.</span></p>
+        </div>
+
+        <div class="hero-strip">
+          <div>
+            <img src="assets/hero/battery-storage.jpg" alt="Energy storage context" />
+            <div class="caption">Illustrative — industrial power / ESS context</div>
+          </div>
+          <div>
+            <img src="assets/products/industrial-genset.jpg" alt="Generator context" />
+            <div class="caption">Illustrative — diesel genset class (capacity TBD)</div>
+          </div>
+        </div>
+
+        <h3><span class="lang-en">Why Hybrid with Generator Backup</span><span class="lang-ar">لماذا النظام الهجين مع المولد</span></h3>
+        <ul class="terms-list">
+          <li class="lang-en">Reduces dependence on very large battery banks for peak or prolonged high-demand periods.</li>
+          <li class="lang-ar">يقلل الاعتماد على بنوك بطاريات كبيرة جدًا لفترات الذروة أو الطلب المرتفع المطوّل.</li>
+          <li class="lang-en">Generator provides engineered backup when solar resource or state-of-charge is insufficient.</li>
+          <li class="lang-ar">يوفر المولد احتياطيًا هندسيًا عند نقص المورد الشمسي أو انخفاض حالة الشحن.</li>
+          <li class="lang-en">ATS enables automatic source transfer according to the approved control philosophy.</li>
+          <li class="lang-ar">يتيح ATS التحويل التلقائي بين المصادر وفق فلسفة التحكم المعتمدة.</li>
+          <li class="lang-en">Fuel logistics, noise, and emissions management remain client operational responsibilities unless otherwise contracted.</li>
+          <li class="lang-ar">تظل لوجستيات الوقود والضوضاء والانبعاثات مسؤولية تشغيلية للعميل ما لم يُتعاقد خلاف ذلك.</li>
+        </ul>
+
+        <h3><span class="lang-en">Major Components</span><span class="lang-ar">المكونات الرئيسية</span></h3>
+        <ol class="scope-list">
+          <li>High Efficiency Monocrystalline Solar PV Panels</li>
+          <li>Commercial Hybrid Solar Inverters</li>
+          <li>Lithium Battery Energy Storage System</li>
+          <li>Diesel Generator Set — Capacity To Be Engineered</li>
+          <li>Automatic Transfer Switch (ATS)</li>
+          <li>Generator Synchronization / Control System Where Required</li>
+          <li>AC/DC Protection and Distribution Panels</li>
+          <li>Mounting Structures</li>
+          <li>Electrical Cables and Accessories</li>
+          <li>Earthing and Lightning Protection</li>
+          <li>Energy Monitoring System</li>
+          <li>Installation, Testing and Commissioning</li>
+        </ol>
+
+        <div class="note-box">
+          <span class="lang-en">Generator kVA is <strong>not</strong> assumed equal to 161 kW or 200 kVA without maximum demand and starting-current analysis (especially ACs and pumps).</span>
+          <span class="lang-ar block">قدرة المولد بالـ kVA <strong>لا</strong> تُفترض مساوية لـ 161 كيلوواط أو 200 ك.ف.أ دون تحليل الطلب الأقصى وتيارات الإقلاع (خصوصًا المكيفات والمضخات).</span>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 02 — Hybrid Architecture</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">9</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 10. OPTION 02 EQUIPMENT ===================== -->
+    <section class="page option-02" id="option-02-equipment">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 02 — Equipment Specifications</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Reference Products · Illustrative Images</div>
+        </div>
+
+        <h2><span class="section-no">10</span><span class="lang-en">Equipment Specifications &amp; Product Images</span><span class="lang-ar">مواصفات المعدات وصور المنتجات</span></h2>
+
+        <div class="equipment-grid">
+          <article class="equip-card">
+            <img src="assets/products/trina-card.svg" alt="Trina Solar reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Trina Solar</div>
+              <h4>Vertex Series (Reference)</h4>
+              <ul>
+                <li>High-efficiency commercial PV modules</li>
+                <li>Alternative to LONGi / Jinko within same class</li>
+                <li>Final wattage after array optimization</li>
+              </ul>
+              <a class="link" href="https://www.trinasolar.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/sungrow-card.svg" alt="Sungrow inverter reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Sungrow</div>
+              <h4>SG / SH Commercial Hybrid (Reference)</h4>
+              <ul>
+                <li>Commercial PV and hybrid inverter platforms</li>
+                <li>Suitable for C&amp;I hybrid applications</li>
+                <li>Capacity bank TBD after demand study</li>
+              </ul>
+              <a class="link" href="https://en.sungrowpower.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/huawei-card.svg" alt="Huawei reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Huawei FusionSolar</div>
+              <h4>SUN2000 + Smart ESS (Reference)</h4>
+              <ul>
+                <li>Smart string inverters with monitoring suite</li>
+                <li>Hybrid/storage coupling per approved design</li>
+                <li>Not declared as selected until confirmation</li>
+              </ul>
+              <a class="link" href="https://solar.huawei.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/byd-card.svg" alt="BYD ESS" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">BYD Battery-Box</div>
+              <h4>LiFePO₄ Storage (Reference)</h4>
+              <ul>
+                <li>Typically smaller bank than pure off-grid Option 01 for same peak — subject to study</li>
+                <li>Works with hybrid control &amp; genset backup</li>
+              </ul>
+              <a class="link" href="https://www.bydbatterybox.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/cummins-card.svg" alt="Cummins genset reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Cummins</div>
+              <h4>Diesel Generator Set (Capacity TBD)</h4>
+              <ul>
+                <li>Prime / standby ratings to be engineered</li>
+                <li>50 Hz, UAE ambient derating to be applied</li>
+                <li>Sound-attenuated canopy options available</li>
+              </ul>
+              <a class="link" href="https://www.cummins.com/generators" target="_blank" rel="noopener">Manufacturer generators</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/perkins-card.svg" alt="Perkins reference" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Perkins</div>
+              <h4>Diesel Engine Power Unit (Reference)</h4>
+              <ul>
+                <li>Alternative genset powertrain class</li>
+                <li>Final OEM package TBD with local distributor</li>
+                <li>Fuel system &amp; day tank outside electrical BOM unless added</li>
+              </ul>
+              <a class="link" href="https://www.perkins.com/" target="_blank" rel="noopener">Manufacturer site</a>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/ats-switch.jpg" alt="ATS illustrative" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">ATS &amp; Controls</div>
+              <h4>Automatic Transfer Switch</h4>
+              <ul>
+                <li>Open / closed transition per design</li>
+                <li>Interlock with inverter / genset controller</li>
+              </ul>
+            </div>
+          </article>
+          <article class="equip-card">
+            <img src="assets/products/electrical-panel.jpg" alt="Distribution panels" />
+            <div class="body">
+              <div class="illust-tag">Illustrative Image</div>
+              <div class="brand">Power Distribution</div>
+              <h4>AC/DC Panels &amp; Protection</h4>
+              <ul>
+                <li>Main &amp; sub distribution for cabin loads</li>
+                <li>SPD, breakers, isolators as engineered</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 02 — Reference Equipment Portfolio</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">10</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 11. OPTION 02 BOQ ===================== -->
+    <section class="page option-02" id="option-02-boq">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">OPTION 02 — BOQ &amp; Financial Quotation</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">All prices in AED · Editable</div>
+        </div>
+
+        <h2><span class="section-no">11</span><span class="lang-en">OPTION 02 — Bill of Quantities &amp; Quotation</span><span class="lang-ar">الخيار 02 — جدول الكميات والأسعار</span></h2>
+        <p class="muted lang-en">Includes diesel generator and ATS line items. Prices blank until supplier offers are locked.</p>
+        <p class="muted lang-ar block">يتضمن بنود المولد و ATS. الأسعار فارغة حتى تثبيت عروض الموردين.</p>
+
+        <div class="boq-actions edit-only">
+          <button type="button" data-add-boq="opt2" data-i18n-addrow>Add BOQ Row</button>
+        </div>
+
+        <div class="table-scroll">
+          <table class="boq-table" data-option="opt2">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Equipment Description</th>
+                <th>Brand / Model</th>
+                <th>Image</th>
+                <th>Qty</th>
+                <th>Unit</th>
+                <th class="price-col">Unit Price (AED)</th>
+                <th class="price-col">Total (AED)</th>
+                <th class="edit-only"></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td class="item-no">01</td>
+                <td><input type="text" class="editable" data-field="desc" value="Solar PV Panels — High Efficiency Monocrystalline"></td>
+                <td><input type="text" class="editable" data-field="brand" value="LONGi / Jinko / Trina (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/trina-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="Wp"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">02</td>
+                <td><input type="text" class="editable" data-field="desc" value="Commercial Hybrid Solar Inverters"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Huawei / Sungrow / Deye (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/sungrow-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="kW"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">03</td>
+                <td><input type="text" class="editable" data-field="desc" value="Lithium Battery Energy Storage System"></td>
+                <td><input type="text" class="editable" data-field="brand" value="BYD / CATL (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/catl-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value=""></td>
+                <td><input type="text" class="editable" data-field="unit" value="kWh"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">04</td>
+                <td><input type="text" class="editable" data-field="desc" value="Battery Cabinets / Racks"></td>
+                <td><input type="text" class="editable" data-field="brand" value="OEM Matching ESS"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/battery-cabinet.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">05</td>
+                <td><input type="text" class="editable" data-field="desc" value="Diesel Generator Set — Capacity To Be Engineered"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Cummins / Perkins (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/cummins-card.svg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="kVA"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">06</td>
+                <td><input type="text" class="editable" data-field="desc" value="Automatic Transfer Switch (ATS)"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/ats-switch.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">07</td>
+                <td><input type="text" class="editable" data-field="desc" value="Generator Synchronization / Control System (Where Required)"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/monitoring-system.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">08</td>
+                <td><input type="text" class="editable" data-field="desc" value="AC/DC Protection & Distribution Panels"></td>
+                <td><input type="text" class="editable" data-field="brand" value="ABB / Schneider / Equivalent (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/electrical-panel.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">09</td>
+                <td><input type="text" class="editable" data-field="desc" value="Mounting Structures"></td>
+                <td><input type="text" class="editable" data-field="brand" value="HDG / Aluminium (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/mounting-structure.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">10</td>
+                <td><input type="text" class="editable" data-field="desc" value="Electrical Cables & Accessories"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/cables-accessories.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">11</td>
+                <td><input type="text" class="editable" data-field="desc" value="Earthing & Lightning Protection"></td>
+                <td><input type="text" class="editable" data-field="brand" value="TBD"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/earthing-protection.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">12</td>
+                <td><input type="text" class="editable" data-field="desc" value="Energy Monitoring System"></td>
+                <td><input type="text" class="editable" data-field="brand" value="Inverter OEM Platform (TBD)"></td>
+                <td class="img-cell"><img class="thumb" src="assets/products/monitoring-system.jpg" alt=""></td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">13</td>
+                <td><input type="text" class="editable" data-field="desc" value="Installation & Labor"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">14</td>
+                <td><input type="text" class="editable" data-field="desc" value="Testing & Commissioning"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">15</td>
+                <td><input type="text" class="editable" data-field="desc" value="Transportation"></td>
+                <td><input type="text" class="editable" data-field="brand" value="—"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+
+              <tr>
+                <td class="item-no">16</td>
+                <td><input type="text" class="editable" data-field="desc" value="Engineering & Design"></td>
+                <td><input type="text" class="editable" data-field="brand" value="EPC Scope"></td>
+                <td class="img-cell">—</td>
+                <td><input type="number" min="0" step="1" class="editable num" data-field="qty" value="1"></td>
+                <td><input type="text" class="editable" data-field="unit" value="Lot"></td>
+                <td class="price-col"><input type="number" min="0" step="0.01" class="editable num" data-field="unitPrice" value="" placeholder="—"></td>
+                <td class="price-col"><input type="text" class="num" data-field="lineTotal" readonly value=""></td>
+                <td class="edit-only"><button type="button" class="row-delete" title="Delete">✕</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="financial-summary">
+          <table>
+            <tr><td>Subtotal</td><td class="num"><span data-fin="opt2-subtotal">0.00</span> AED</td></tr>
+            <tr><td>Discount (AED)</td><td><input type="number" min="0" step="0.01" class="editable num" data-fin="opt2-discount" value="0" /></td></tr>
+            <tr><td>VAT Rate (%)</td><td><input type="number" min="0" step="0.01" class="editable num" data-fin="opt2-vatRate" value="5" /></td></tr>
+            <tr><td>VAT Amount</td><td class="num"><span data-fin="opt2-vatAmount">0.00</span> AED</td></tr>
+            <tr class="grand-total"><td>Grand Total Incl. VAT</td><td class="num"><span data-fin="opt2-grand">0.00</span> AED</td></tr>
+          </table>
+        </div>
+
+        <div class="page-footer">
+          <span>OPTION 02 — Commercial Offer (AED)</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">11</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 12. COMPARISON ===================== -->
+    <section class="page" id="comparison">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Technical &amp; Commercial Comparison</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Option 01 vs Option 02</div>
+        </div>
+
+        <h2><span class="section-no">12</span><span class="lang-en">Technical Comparison Between Both Options</span><span class="lang-ar">مقارنة فنية بين الخيارين</span></h2>
+
+        <div class="kpi-row comparison-totals">
+          <div class="kpi opt1">
+            <div class="label">OPTION 01 — Grand Total Incl. VAT</div>
+            <div class="amount" data-kpi="opt1">0.00 AED</div>
+          </div>
+          <div class="kpi opt2">
+            <div class="label">OPTION 02 — Grand Total Incl. VAT</div>
+            <div class="amount" data-kpi="opt2">0.00 AED</div>
+          </div>
+        </div>
+        <p class="muted comparison-totals"><span class="lang-en">Variance:</span><span class="lang-ar">الفرق:</span> <span data-fin="delta">equal</span></p>
+
+        <div class="table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Criteria</th>
+                <th class="opt1">OPTION 01 — Off-Grid</th>
+                <th class="opt2">OPTION 02 — Hybrid + DG</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Grid connection</td>
+                <td>Not required / not used</td>
+                <td>Not required / not used</td>
+              </tr>
+              <tr>
+                <td>Diesel generator</td>
+                <td>Not included</td>
+                <td>New genset — capacity to be engineered</td>
+              </tr>
+              <tr>
+                <td>Primary daytime source</td>
+                <td>Solar PV + ESS</td>
+                <td>Solar PV + ESS, DG on demand</td>
+              </tr>
+              <tr>
+                <td>Night lighting</td>
+                <td>Battery storage</td>
+                <td>Battery storage (DG backup available)</td>
+              </tr>
+              <tr>
+                <td>Battery bank sizing tendency</td>
+                <td>Typically larger autonomy requirement</td>
+                <td>Can be optimized with DG support</td>
+              </tr>
+              <tr>
+                <td>Fuel logistics</td>
+                <td>None</td>
+                <td>Required for DG operation</td>
+              </tr>
+              <tr>
+                <td>Noise / emissions</td>
+                <td>Minimal (inverter/cooling only)</td>
+                <td>DG-related when running</td>
+              </tr>
+              <tr>
+                <td>CAPEX profile</td>
+                <td>Higher ESS share likely</td>
+                <td>ESS + genset + ATS share</td>
+              </tr>
+              <tr>
+                <td>OPEX profile</td>
+                <td>Primarily maintenance of PV/ESS</td>
+                <td>PV/ESS + fuel &amp; DG servicing</td>
+              </tr>
+              <tr>
+                <td>Best suited when</td>
+                <td>Fuel-free silent operation is priority and autonomy is confirmed</td>
+                <td>Peak resilience needed without oversizing batteries</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note-box">
+          <span class="lang-en">Commercial totals above update live from each option’s BOQ. Blank unit prices yield zero until rates are entered — this does not imply a free offer.</span>
+          <span class="lang-ar block">الإجماليات أعلاه تتحدث مباشرة من جداول الكميات. الأسعار الفارغة تُظهر صفرًا حتى إدخال الأسعار — وهذا لا يعني عرضًا مجانيًا.</span>
+        </div>
+
+        <div class="page-footer">
+          <span>Comparative Decision Matrix</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">12</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 13. SCOPE OF WORK ===================== -->
+    <section class="page" id="scope">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Scope of Work</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Included EPC Activities</div>
+        </div>
+
+        <h2><span class="section-no">13</span><span class="lang-en">Scope of Work</span><span class="lang-ar">نطاق العمل</span></h2>
+        <p class="lang-en">Unless amended in writing, the selected option includes the following EPC activities:</p>
+        <p class="lang-ar block">ما لم يُعدَّل كتابيًا، يشمل الخيار المعتمد الأنشطة التالية:</p>
+        <ul class="scope-list">
+          <li class="lang-en">Detailed engineering after confirmation of adopted load / demand values.</li>
+          <li class="lang-ar">هندسة تفصيلية بعد تأكيد قيم الحمل / الطلب المعتمدة.</li>
+          <li class="lang-en">Supply of PV modules, inverters, ESS, BOS, and (Option 02) genset &amp; ATS as listed in the approved BOQ.</li>
+          <li class="lang-ar">توريد الألواح والإنفرترات والتخزين وملحقات النظام و(للخيار 02) المولد و ATS حسب جدول الكميات المعتمد.</li>
+          <li class="lang-en">Installation, termination, earthing, and basic testing of electrical systems within proposal boundary.</li>
+          <li class="lang-ar">التركيب والتوصيل والتأريض والاختبارات الأساسية ضمن حدود العرض.</li>
+          <li class="lang-en">Commissioning support and handover documentation for the supplied system.</li>
+          <li class="lang-ar">دعم التشغيل التجريبي ووثائق التسليم للنظام المورد.</li>
+          <li class="lang-en">Training overview for client operators (duration editable below).</li>
+          <li class="lang-ar">نظرة تدريبية لمشغلي العميل (المدة قابلة للتعديل أدناه).</li>
+        </ul>
+
+        <div class="meta-grid commercial-form">
+          <div class="info-card">
+            <span class="label">Operator Training (Editable)</span>
+            <input class="editable" data-store="training" type="text" value="To be confirmed — typically 1 site briefing day" />
+          </div>
+          <div class="info-card">
+            <span class="label">Documentation Language</span>
+            <input class="editable" data-store="docLang" type="text" value="English (Arabic summary optional)" />
+          </div>
+        </div>
+
+        <div class="page-footer">
+          <span>Included Scope</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">13</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 14. EXCLUSIONS ===================== -->
+    <section class="page" id="exclusions">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Exclusions &amp; Assumptions</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Read Carefully</div>
+        </div>
+
+        <h2><span class="section-no">14</span><span class="lang-en">Exclusions and Assumptions</span><span class="lang-ar">الاستثناءات والافتراضات</span></h2>
+
+        <h3><span class="lang-en">Exclusions (unless added by variation order)</span><span class="lang-ar">الاستثناءات (ما لم تُضف بأمر تغيير)</span></h3>
+        <ul class="terms-list">
+          <li class="lang-en">Civil works, foundations, concrete pads, fencing, and site grading not expressly listed in BOQ.</li>
+          <li class="lang-ar">الأعمال المدنية والأساسات والخرسانة والسياج وتسوية الموقع غير المدرجة صراحة في جدول الكميات.</li>
+          <li class="lang-en">Government permits, authority approvals, grid applications (if any), and statutory fees.</li>
+          <li class="lang-ar">التصاريح الحكومية والموافقات ورسوم الجهات الرسمية.</li>
+          <li class="lang-en">Utility connection charges, DEWA/SEWA or other authority contributions (not applicable if site remains off-grid).</li>
+          <li class="lang-ar">رسوم الربط بمرافق الكهرباء (غير منطبقة إن بقي الموقع خارج الشبكة).</li>
+          <li class="lang-en">Fuel supply, fuel storage tanks beyond genset package, and ongoing fuel management (Option 02).</li>
+          <li class="lang-ar">توريد الوقود وخزاناته خارج باقة المولد وإدارته المستمرة (الخيار 02).</li>
+          <li class="lang-en">Cabin internal fit-out, HVAC equipment supply (ACs listed as loads only), and furniture.</li>
+          <li class="lang-ar">التشطيب الداخلي للكبائن وتوريد أجهزة التكييف (المكيفات أحمال فقط) والأثاث.</li>
+          <li class="lang-en">Any works outside the battery limit of the selected single-line diagram.</li>
+          <li class="lang-ar">أي أعمال خارج حدود المخطط أحادي الخط المعتمد.</li>
+          <li class="lang-en">Extended performance guarantees, yield insurance, or carbon credit registration.</li>
+          <li class="lang-ar">ضمانات أداء ممتدة أو تأمين إنتاج أو تسجيل أرصدة كربون.</li>
+        </ul>
+
+        <h3><span class="lang-en">Assumptions</span><span class="lang-ar">الافتراضات</span></h3>
+        <ul class="terms-list">
+          <li class="lang-en">Client will confirm the governing load figure among 161 kW / 201.25 kVA / 221 kVA / ~200 kVA.</li>
+          <li class="lang-ar">سيؤكد العميل رقم الحمل الحاكم بين 161 كيلوواط / 201.25 ك.ف.أ / 221 ك.ف.أ / ~200 ك.ف.أ.</li>
+          <li class="lang-en">Not all connected loads operate simultaneously for 10 hours; diversity factors will be agreed.</li>
+          <li class="lang-ar">ليست كل الأحمال المتصلة تعمل معًا طوال 10 ساعات؛ ستُتفق عوامل التنوع.</li>
+          <li class="lang-en">Adequate structural capacity exists for proposed mounting; verification by competent engineer required.</li>
+          <li class="lang-ar">تتوفر قدرة إنشائية كافية للتركيب؛ ويُطلب تحقق مهندس مختص.</li>
+          <li class="lang-en">Site access, crane/lift (if needed), and secure storage provided by client free of charge unless priced.</li>
+          <li class="lang-ar">يتيح العميل الوصول للموقع والرافعة (إن لزم) والتخزين الآمن دون تكلفة ما لم يُسعَّر.</li>
+        </ul>
+
+        <div class="page-footer">
+          <span>Boundaries of Offer</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">14</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 15. COMMERCIAL TERMS ===================== -->
+    <section class="page" id="commercial">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Commercial Terms &amp; Conditions</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Editable Fields</div>
+        </div>
+
+        <h2><span class="section-no">15</span><span class="lang-en">Commercial Terms &amp; Conditions</span><span class="lang-ar">الشروط التجارية</span></h2>
+
+        <div class="meta-grid commercial-form">
+          <div class="info-card"><span class="label">Quotation Number</span><input class="editable" data-store="cQuoteNo" type="text" value="QT-NC-SOLAR-2026-001" /></div>
+          <div class="info-card"><span class="label">Quotation Date</span><input class="editable" data-store="cQuoteDate" type="text" value="18 November 2026" /></div>
+          <div class="info-card"><span class="label">Validity</span><input class="editable" data-store="validity" type="text" value="To be confirmed (e.g. 30 days from quotation date)" /></div>
+          <div class="info-card"><span class="label">Expected Delivery Period</span><input class="editable" data-store="delivery" type="text" value="Subject to equipment lead times after PO &amp; approvals" /></div>
+          <div class="info-card"><span class="label">Installation Duration</span><input class="editable" data-store="installDur" type="text" value="To be confirmed after final design freeze" /></div>
+          <div class="info-card"><span class="label">Payment Terms</span><input class="editable" data-store="payment" type="text" value="To be mutually agreed (milestone-based suggested)" /></div>
+          <div class="info-card"><span class="label">Currency</span><input class="editable" data-store="currency" type="text" value="United Arab Emirates Dirham (AED)" /></div>
+          <div class="info-card"><span class="label">VAT</span><input class="editable" data-store="vatNote" type="text" value="5% UAE VAT applicable unless exempt — rate editable in BOQ" /></div>
+          <div class="info-card" style="grid-column:1/-1"><span class="label">After-Sales Support</span><textarea class="editable" data-store="afterSales" rows="3">Scope and response times to be defined in the service agreement after award. No SLA is implied by this proposal alone.</textarea></div>
+          <div class="info-card" style="grid-column:1/-1"><span class="label">Proposer Company Details (Editable — do not invent)</span><textarea class="editable" data-store="companyDetails" rows="4">Company Name: [Enter]
+Address: [Enter]
+Telephone: [Enter]
+Email: [Enter]
+TRN: [Enter]</textarea></div>
+        </div>
+
+        <div class="note-box">
+          <span class="lang-en">This quotation does not constitute a binding fixed price until unit rates, quantities, and technical schedule are completed and the acceptance page is signed by both parties.</span>
+          <span class="lang-ar block">لا يُعد هذا العرض سعرًا ثابتًا ملزمًا إلا بعد استكمال أسعار الوحدات والكميات والجدول الفني وتوقيع صفحة القبول من الطرفين.</span>
+        </div>
+
+        <div class="page-footer">
+          <span>Commercial Framework</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">15</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 16. WARRANTY ===================== -->
+    <section class="page" id="warranty">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Warranty Information</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Subject to Manufacturer Terms</div>
+        </div>
+
+        <h2><span class="section-no">16</span><span class="lang-en">Warranty Information</span><span class="lang-ar">معلومات الضمان</span></h2>
+        <p class="lang-en">Warranty periods below are placeholders aligned with typical industry practice for reference brands. They are <strong>not</strong> final project warranties until confirmed against the selected SKUs and manufacturer certificates.</p>
+        <p class="lang-ar block">فترات الضمان أدناه حقول قابلة للتعديل ومتوافقة مع الممارسات الشائعة للعلامات المرجعية. <strong>ليست</strong> ضمانات نهائية للمشروع إلا بعد تأكيدها وفق الموديلات المختارة وشهادات المصنّع.</p>
+
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Item</th><th>Typical Reference</th><th>Project Warranty (Editable)</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>PV Modules — Product</td>
+                <td>Often 12 years product (brand-dependent)</td>
+                <td><input class="editable" data-store="wPvProd" type="text" value="To be confirmed with selected brand" /></td>
+              </tr>
+              <tr>
+                <td>PV Modules — Performance</td>
+                <td>Often up to 25–30 years linear</td>
+                <td><input class="editable" data-store="wPvPerf" type="text" value="To be confirmed with selected brand" /></td>
+              </tr>
+              <tr>
+                <td>Inverters</td>
+                <td>Typically 5–10 years (extendable)</td>
+                <td><input class="editable" data-store="wInv" type="text" value="To be confirmed" /></td>
+              </tr>
+              <tr>
+                <td>Lithium Batteries / ESS</td>
+                <td>Often 5–10 years (throughput clauses apply)</td>
+                <td><input class="editable" data-store="wBatt" type="text" value="To be confirmed" /></td>
+              </tr>
+              <tr>
+                <td>Diesel Generator (Opt. 02)</td>
+                <td>Per OEM standard warranty</td>
+                <td><input class="editable" data-store="wDg" type="text" value="To be confirmed with genset OEM" /></td>
+              </tr>
+              <tr>
+                <td>Workmanship / Installation</td>
+                <td>EPC-defined</td>
+                <td><input class="editable" data-store="wWork" type="text" value="To be confirmed in contract" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="info-card commercial-form">
+          <span class="label">Warranty Period (Summary Field)</span>
+          <input class="editable" data-store="warrantyPeriod" type="text" value="Per equipment schedule above — finalize before contract signature" />
+        </div>
+
+        <div class="page-footer">
+          <span>Warranty — Confirmation Pending</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">16</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 17. SCHEDULE ===================== -->
+    <section class="page" id="schedule">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Project Implementation Schedule</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Indicative — Not Binding Durations</div>
+        </div>
+
+        <h2><span class="section-no">17</span><span class="lang-en">Project Implementation Schedule</span><span class="lang-ar">الجدول الزمني للتنفيذ</span></h2>
+        <p class="muted lang-en">Indicative sequence only. No final durations are committed before design freeze, procurement lead times, and site readiness.</p>
+        <p class="muted lang-ar block">تسلسل إرشادي فقط. لا تُعتمد مدد نهائية قبل تجميد التصميم وأزمنة التوريد وجاهزية الموقع.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong><span class="lang-en">Phase A — Load Confirmation &amp; Kick-off</span><span class="lang-ar">المرحلة أ — تأكيد الأحمال والبدء</span></strong>
+            <span data-editable data-store="phaseA">Confirm governing kVA/kW, diversity, night lighting profile, and option selection.</span>
+          </div>
+          <div class="timeline-item">
+            <strong><span class="lang-en">Phase B — Detailed Design</span><span class="lang-ar">المرحلة ب — التصميم التفصيلي</span></strong>
+            <span data-editable data-store="phaseB">SLD, stringing, ESS autonomy, (Opt.02) genset sizing, protection coordination.</span>
+          </div>
+          <div class="timeline-item">
+            <strong><span class="lang-en">Phase C — Procurement</span><span class="lang-ar">المرحلة ج — التوريد</span></strong>
+            <span data-editable data-store="phaseC">Place orders after approved brands/models; lead times vary by OEM and stock.</span>
+          </div>
+          <div class="timeline-item">
+            <strong><span class="lang-en">Phase D — Site Installation</span><span class="lang-ar">المرحلة د — التركيب بالموقع</span></strong>
+            <span data-editable data-store="phaseD">Structures, PV, inverters, ESS, cabling, panels, (Opt.02) genset &amp; ATS.</span>
+          </div>
+          <div class="timeline-item">
+            <strong><span class="lang-en">Phase E — Testing, Commissioning &amp; Handover</span><span class="lang-ar">المرحلة هـ — الاختبار والتشغيل والتسليم</span></strong>
+            <span data-editable data-store="phaseE">Functional tests, training overview, as-built pack, warranty registration support.</span>
+          </div>
+        </div>
+
+        <div class="meta-grid commercial-form" style="margin-top:18px">
+          <div class="info-card"><span class="label">Target Overall Duration (Editable)</span><input class="editable" data-store="overallDur" type="text" value="To be confirmed — not a contractual deadline" /></div>
+          <div class="info-card"><span class="label">Site Access Assumptions</span><input class="editable" data-store="accessAssum" type="text" value="Unrestricted daytime access; client-provided storage" /></div>
+        </div>
+
+        <div class="page-footer">
+          <span>Implementation Roadmap (Indicative)</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">17</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 18. ACCEPTANCE ===================== -->
+    <section class="page" id="acceptance">
+      <div class="page-inner">
+        <div class="page-header">
+          <div>
+            <div class="doc-title">Acceptance and Approval</div>
+            <div class="gold-rule"></div>
+          </div>
+          <div class="doc-meta">Signature Page</div>
+        </div>
+
+        <h2><span class="section-no">18</span><span class="lang-en">Acceptance and Approval</span><span class="lang-ar">القبول والاعتماد</span></h2>
+        <p class="lang-en">By signing below, the Client acknowledges receipt of this Technical &amp; Commercial Proposal for Temporary Site Offices – Solar Power Supply at Rawdat Al Sidr, Sharjah, and indicates the preferred option for further engineering.</p>
+        <p class="lang-ar block">بتوقيعه أدناه، يقرّ العميل باستلام هذا العرض الفني والتجاري لمشروع مكاتب الموقع المؤقتة — تزويد بالطاقة الشمسية في روضة السدر، الشارقة، ويحدد الخيار المفضل لاستكمال الهندسة.</p>
+
+        <div class="two-col" style="margin:16px 0">
+          <div class="info-card">
+            <span class="label">Selected Option</span>
+            <div style="margin-top:8px">
+              <label><input type="radio" name="selectedOption" value="opt1" /> OPTION 01 — Off-Grid Solar</label><br/>
+              <label><input type="radio" name="selectedOption" value="opt2" /> OPTION 02 — Hybrid + Diesel</label><br/>
+              <label><input type="radio" name="selectedOption" value="further" /> Further discussion required</label>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="label">Confirmed Design Load Basis (Editable)</span>
+            <input class="editable" data-store="confirmedLoad" type="text" value="Pending client confirmation (161 kW / 201.25 kVA / 221 kVA / ~200 kVA)" />
+          </div>
+        </div>
+
+        <div class="sig-grid two-col">
+          <div class="sig-box">
+            <div class="label"><span class="lang-en">Client Approval — NATIONAL CONTRACTING</span><span class="lang-ar">اعتماد العميل — NATIONAL CONTRACTING</span></div>
+            <div>Name: <span data-editable data-store="clientSignName">____________________________</span></div>
+            <div>Title: <span data-editable data-store="clientSignTitle">____________________________</span></div>
+            <div>Date: <span data-editable data-store="clientSignDate">____________________________</span></div>
+            <div style="margin-top:18px">Signature: ____________________________</div>
+          </div>
+          <div class="sig-box">
+            <div class="label"><span class="lang-en">Authorized Signature — Proposer</span><span class="lang-ar">التوقيع المعتمد — مقدم العرض</span></div>
+            <div>Name: <span data-editable data-store="vendorSignName">____________________________</span></div>
+            <div>Title: <span data-editable data-store="vendorSignTitle">____________________________</span></div>
+            <div>Date: <span data-editable data-store="vendorSignDate">____________________________</span></div>
+            <div style="margin-top:18px">Signature: ____________________________</div>
+          </div>
+        </div>
+
+        <div class="two-col" style="margin-top:14px">
+          <div class="stamp-area"><span class="lang-en">Company Stamp</span><span class="lang-ar">ختم الشركة</span></div>
+          <div class="info-card">
+            <span class="label">Notes</span>
+            <textarea class="editable" data-store="acceptNotes" rows="4" placeholder="Additional acceptance notes..."></textarea>
+          </div>
+        </div>
+
+        <p class="muted" style="margin-top:16px;font-size:0.8rem">
+          <span class="lang-en">End of Proposal — Print via toolbar (Save as PDF uses the system print dialog). Data persists in browser LocalStorage.</span>
+          <span class="lang-ar block">نهاية العرض — اطبع عبر شريط الأدوات (حفظ PDF عبر نافذة الطباعة). تُحفظ البيانات في LocalStorage بالمتصفح.</span>
+        </p>
+
+        <div class="page-footer">
+          <span>Acceptance — NATIONAL CONTRACTING</span>
+          <span><span class="lang-en">Page</span><span class="lang-ar">صفحة</span> <span class="page-num">18</span> / <span class="page-total">18</span></span>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.document-wrap -->
+
+  <script src="script.js"></script>
+</body>
+</html>
