@@ -1,0 +1,4 @@
+افتح Solar-Quotation.html مباشرة في Chrome بعد فك الضغط.
+Open Solar-Quotation.html in Chrome after extracting.
+
+مهم: لا تفتح الملف من داخل برنامج الأرشيف (content://) — فك الضغط أولاً.
