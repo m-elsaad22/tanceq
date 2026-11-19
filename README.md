@@ -2,24 +2,27 @@
 
 Interactive A4 HTML quotation for **Temporary Site Offices – Solar Power Supply** at Rawdat Al Sidr, Sharjah, UAE.
 
-## Open locally
+## Open (mobile-safe)
+
+**Use the single-file document** (CSS, JS, and images are embedded):
+
+- `Solar-Quotation.html` or `index.html`
+- Download ZIP: `NATIONAL-CONTRACTING-Solar-Quotation.zip`
+
+On Android: extract the ZIP fully, then open `Solar-Quotation.html` in Chrome. Do not rely on opening HTML from inside an archive viewer (`content://`), which often blocks styles.
 
 ```bash
-# From this folder
 python3 -m http.server 8765
-# then open http://127.0.0.1:8765/
+# http://127.0.0.1:8765/Solar-Quotation.html
 ```
-
-Or open `index.html` directly in a modern browser (LocalStorage and print work either way; some browsers restrict modules/fonts offline).
 
 ## Files
 
 | Path | Role |
 |------|------|
-| `index.html` | Full 18-section proposal |
-| `styles.css` | Premium EPC identity + A4 print |
-| `script.js` | Edit mode, BOQ math, i18n, LocalStorage |
-| `assets/` | Hero photos + product reference images/SVG cards |
+| `Solar-Quotation.html` / `index.html` | Self-contained 18-section proposal |
+| `styles.css` / `script.js` / `assets/` | Source modules (for editing/rebuild) |
+| `NATIONAL-CONTRACTING-Solar-Quotation.zip` | Direct download package |
 
 ## Features
 

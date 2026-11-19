@@ -485,7 +485,7 @@
     bindGlobalEvents();
     loadPersisted();
     if (!localStorage.getItem(STORAGE_KEY)) {
-      setLanguage("en");
+      setLanguage("ar");
       setEditMode(false);
       applyVisibility();
     }
