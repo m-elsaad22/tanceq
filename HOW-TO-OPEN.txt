@@ -1,9 +1,4 @@
-افتح ملف Solar-Quotation.html مباشرة من المتصفح.
-Open Solar-Quotation.html in Chrome / Safari.
+افتح Solar-Quotation.html مباشرة في Chrome بعد فك الضغط.
+Open Solar-Quotation.html in Chrome after extracting.
 
-مهم للموبايل:
-1) فك ضغط ZIP بالكامل إلى مجلد
-2) افتح Solar-Quotation.html (ملف واحد مكتفٍ ذاتيًا)
-3) لا تفتح من داخل تطبيق الأرشيف مباشرة إن أمكن — استخدم Chrome: File / Open
-
-For Print/PDF: use the gold button, then "Save as PDF".
+مهم: لا تفتح الملف من داخل برنامج الأرشيف (content://) — فك الضغط أولاً.

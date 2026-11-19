@@ -24,7 +24,7 @@
   --font-body: "Source Sans 3", "Noto Sans Arabic", "Segoe UI", Tahoma, "Arial Unicode MS", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   --page-width: 210mm;
-  --page-min-height: 297mm;
+  --page-min-height: 1123px; /* ~297mm at 96dpi — px avoids mobile mm collapse */
 }
 
 * { box-sizing: border-box; }
@@ -188,11 +188,19 @@ body.rtl .page-header .doc-meta { text-align: left; }
 
 /* ---------- Cover ---------- */
 .cover {
-  background:
-    linear-gradient(160deg, rgba(6,16,28,0.88) 0%, rgba(10,22,40,0.72) 45%, rgba(11,110,153,0.55) 100%),
-    url("assets/hero/solar-farm.jpg") center/cover no-repeat;
+  background: linear-gradient(160deg, #06101c 0%, #0a1628 45%, #0b6e99 100%);
   color: var(--white);
   min-height: var(--page-min-height);
+  position: relative;
+}
+.cover-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.45;
 }
 .cover .page-inner {
   display: flex;
@@ -200,6 +208,8 @@ body.rtl .page-header .doc-meta { text-align: left; }
   justify-content: space-between;
   min-height: var(--page-min-height);
   padding-top: 24mm;
+  position: relative;
+  z-index: 1;
 }
 .cover-top {
   display: flex;
@@ -644,30 +654,24 @@ body.rtl .timeline-item::before { left: auto; right: -23px; }
 /* ---------- Visibility helpers ---------- */
 body.hide-option-01 .option-01 { display: none !important; }
 body.hide-option-02 .option-02 { display: none !important; }
+/* NOTE: never put class "lang-ar" on <body> — it would hide the whole page */
 .lang-ar { display: none !important; }
-body.lang-ar .lang-en { display: none !important; }
-body.lang-ar .lang-ar { display: inline !important; }
-body.lang-ar p.lang-ar,
-body.lang-ar li.lang-ar,
-body.lang-ar h2 .lang-ar,
-body.lang-ar h3 .lang-ar,
-body.lang-ar .lang-ar.block { display: block !important; }
-body.lang-ar span.lang-ar:not(.block) { display: inline !important; }
+body.is-ar .lang-en { display: none !important; }
+body.is-ar .lang-ar { display: inline !important; }
+body.is-ar p.lang-ar,
+body.is-ar li.lang-ar,
+body.is-ar h2 .lang-ar,
+body.is-ar h3 .lang-ar,
+body.is-ar .lang-ar.block { display: block !important; }
+body.is-ar span.lang-ar:not(.block) { display: inline !important; }
 .block { display: block; }
 
 /* ---------- Animations (screen) ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .page {
-    animation: rise 0.55s ease both;
-  }
-  @keyframes rise {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: none; }
-  }
-  .cover-brand { animation: fadeup 0.8s ease 0.15s both; }
-  .cover-meta-panel { animation: fadeup 0.8s ease 0.35s both; }
+  .cover-brand { animation: fadeup 0.7s ease; }
+  .cover-meta-panel { animation: fadeup 0.7s ease 0.12s; }
   @keyframes fadeup {
-    from { opacity: 0; transform: translateY(16px); }
+    from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: none; }
   }
 }

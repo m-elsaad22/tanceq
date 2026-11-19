@@ -72,7 +72,9 @@
 
   function setLanguage(lang) {
     state.lang = lang === "ar" ? "ar" : "en";
-    document.body.classList.toggle("lang-ar", state.lang === "ar");
+    // Use is-ar on body — class name "lang-ar" is reserved for translatable nodes
+    document.body.classList.toggle("is-ar", state.lang === "ar");
+    document.body.classList.remove("lang-ar");
     document.body.classList.toggle("rtl", state.lang === "ar");
     document.documentElement.lang = state.lang === "ar" ? "ar" : "en";
     document.documentElement.dir = state.lang === "ar" ? "rtl" : "ltr";
