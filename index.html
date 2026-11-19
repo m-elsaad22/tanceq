@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style id="critical-i18n">
-html,body{margin:0}
 .lang-ar{display:none!important}
 body.is-ar .lang-en{display:none!important}
 body.is-ar .lang-ar{display:inline!important}
@@ -233,6 +232,20 @@ body.rtl .page-header .doc-meta { text-align: left; }
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 12px;
+}
+.cover-quote-meta {
+  text-align: end;
+  font-size: 0.82rem;
+  opacity: 0.9;
+  max-width: 48%;
+  line-height: 1.45;
+}
+body.rtl .cover-quote-meta { text-align: start; }
+@media (max-width: 640px) {
+  .cover-top { flex-direction: column; }
+  .cover-quote-meta { max-width: 100%; text-align: start; }
+  .cover-brand { font-size: 2.2rem !important; }
 }
 .cover-badge {
   border: 1px solid rgba(201,162,39,0.55);
@@ -787,7 +800,7 @@ body.is-ar span.lang-ar:not(.block) { display: inline !important; }
       <div class="page-inner">
         <div class="cover-top">
           <div class="cover-badge">Technical &amp; Commercial Proposal</div>
-          <div style="text-align:right;font-size:0.85rem;opacity:0.85">
+          <div class="cover-quote-meta">
             <div><span class="lang-en">Quotation No.</span><span class="lang-ar">رقم العرض</span>:
               <span data-editable data-store="quoteNo">QT-NC-SOLAR-2026-001</span></div>
             <div><span class="lang-en">Date</span><span class="lang-ar">التاريخ</span>:
@@ -796,7 +809,7 @@ body.is-ar span.lang-ar:not(.block) { display: inline !important; }
         </div>
 
         <div class="cover-brand-block">
-          <span class="cover-eyebrow" data-editable data-store="companyName">[Proposer Company Name — Editable]</span>
+          <span class="cover-eyebrow" data-editable data-store="companyName">اسم جهة العرض (قابل للتعديل) / Proposer Company</span>
           <h1 class="cover-brand">NATIONAL CONTRACTING</h1>
           <p class="cover-headline">
             <span class="lang-en">Temporary Site Offices — Solar Power Supply</span>
