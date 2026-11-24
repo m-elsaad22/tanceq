@@ -103,14 +103,14 @@ export default async function SitePage({ params }: Params) {
             <div className="hero-actions">
               {prev ? (
                 <Link href={`/sites/${prev.id}`} className="btn-ghost">
-                  ← {prev.flag} {prev.country}
+                  السابق: {prev.flag} {prev.country}
                 </Link>
               ) : (
                 <span className="btn-ghost disabled">لا توجد دولة سابقة</span>
               )}
               {next ? (
                 <Link href={`/sites/${next.id}`} className="btn-ghost">
-                  {next.flag} {next.country} →
+                  التالي: {next.flag} {next.country}
                 </Link>
               ) : (
                 <span className="btn-ghost disabled">لا توجد دولة تالية</span>
